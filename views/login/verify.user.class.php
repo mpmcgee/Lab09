@@ -6,6 +6,7 @@
  *Description:
  */
 
+
 class Verify extends View{
     public function display($message) {
 
@@ -33,5 +34,3 @@ class Verify extends View{
         //call the footer method defined in the parent class to add the footer
         parent::footer();
     }
-
-}
