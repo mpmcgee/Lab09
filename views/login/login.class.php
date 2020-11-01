@@ -6,7 +6,40 @@
  *Description:
  */
 
-class Login
-{
+class Login extends View {
+    public function display() {
 
+        //call the header method defined in the parent class to add the header
+        parent::header();
+        ?>
+        <!-- page specific content starts -->
+        <!-- top row for the page header  -->
+        <div class="top-row">LOGIN</div>
+
+        <!-- middle row -->
+        <div class="middle-row">
+            <h3>Please enter your username and password.</h3>
+        <form method="POST" action="index.php">
+            <p>
+                <input id="username" value="" name="username" type="text" required="required" placeholder="username"/>
+                <br>
+            </p>
+            <p>
+                <input id="password" value="" name="password" type="text" required="required" placeholder="Password"/>
+                <br>
+            </p>
+            <button type="submit"><span>Login</span></button>
+        </form>
+        </div>
+        <!-- bottom row for links  -->
+        <div class="bottom-row">
+            <span style="float: left">Don't have an account? <a href="index.php">Register</a></span>
+        </div>
+        <!-- page specific content ends -->
+
+
+        <?php
+        //call the footer method defined in the parent class to add the footer
+        parent::footer();
+    }
 }
