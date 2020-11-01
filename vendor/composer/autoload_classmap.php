@@ -16,6 +16,6 @@ return array(
     'UserController' => $baseDir . '/controllers/user_controller.class.php',
     'UserError' => $baseDir . '/views/error/user_error.class.php',
     'UserModel' => $baseDir . '/models/user_model.class.php',
-    'Verify' => $baseDir . '/views/login/verify.class.php',
+    'Verify' => $baseDir . '/views/login/verify.user.class.php',
     'View' => $baseDir . '/views/view.class.php',
 );

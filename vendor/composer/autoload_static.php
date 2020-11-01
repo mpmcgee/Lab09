@@ -17,7 +17,7 @@ class ComposerStaticInitf2f37d063f945fc05f45419d10a4db2b
         'UserController' => __DIR__ . '/../..' . '/controllers/user_controller.class.php',
         'UserError' => __DIR__ . '/../..' . '/views/error/user_error.class.php',
         'UserModel' => __DIR__ . '/../..' . '/models/user_model.class.php',
-        'Verify' => __DIR__ . '/../..' . '/views/login/verify.class.php',
+        'Verify' => __DIR__ . '/../..',
         'View' => __DIR__ . '/../..' . '/views/view.class.php',
     );
 

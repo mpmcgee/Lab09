@@ -27,7 +27,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ca7eba8-b211-4e08-8452-00250c16be11" name="Default Changelist" comment="Ready for testing.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user_model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_model.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
@@ -88,9 +87,23 @@
       <option name="presentableId" value="Default" />
       <updated>1604171912073</updated>
       <workItem from="1604171922412" duration="209000" />
-      <workItem from="1604239545175" duration="309000" />
+      <workItem from="1604239545175" duration="627000" />
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ready for testing.">
+      <created>1604239879016</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604239879016</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ready for testing.">
+      <created>1604239957483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604239957483</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,11 +148,11 @@
     </state>
     <state x="-1180" y="-25" key="FileChooserDialogImpl/0.0.1366.728/-1920.-300.1920.1040@-1920.-300.1920.1040" timestamp="1604098830425" />
     <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604172135815" />
-    <state x="393" y="177" key="Vcs.Push.Dialog.v2" timestamp="1604239602312">
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2" timestamp="1604239976588">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-300.1920.1040@-1920.-300.1920.1040" timestamp="1604114021581" />
-    <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604239602312" />
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604239976588" />
     <state x="-1304" y="90" width="672" height="677" key="run.anything.popup" timestamp="1604104987152">
       <screen x="-1920" y="-300" width="1920" height="1040" />
     </state>

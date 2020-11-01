@@ -128,7 +128,7 @@ class UserModel
 
                 }
             } else{
-                return;
+                return false;
             }
         }
 
