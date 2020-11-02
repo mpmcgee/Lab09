@@ -26,33 +26,11 @@ class UserModel
         if (isset($_POST['submit'])) {
             // receive all input values from the form
             $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
-            $password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
-            $password_hash = password_hash($password, PASSWORD_DEFAULT);
+            $password_hash = password_hash(['$password'], PASSWORD_DEFAULT);
             $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
             $first_name = filter_var(['first_name'], FILTER_SANITIZE_STRING);
             $last_name = filter_var(['last_name'], FILTER_SANITIZE_STRING);
-        }
-        if (empty($username)) {
 
-            return false;
-
-        } else if (empty($password)) {
-
-            return false;
-
-        } else if (empty($email)) {
-
-            return false;
-
-        } else if (empty($first_name)) {
-
-            return false;
-
-        } else if (empty($last_name)) {
-
-            return false;
-
-        } else {
             $sql = ("INSERT INTO" . $this->db->getUserTable() . "(username, password, email, first_name, last_name) 
             VALUES ('$username', '$password_hash', '$email', '$first_name', '$last_name'");
 

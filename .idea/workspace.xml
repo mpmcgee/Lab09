@@ -26,9 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca7eba8-b211-4e08-8452-00250c16be11" name="Default Changelist" comment="Ready for testing.">
+    <list default="true" id="5ca7eba8-b211-4e08-8452-00250c16be11" name="Default Changelist" comment="form action to model, nothing working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login/verify.user.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/verify.user.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user_model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_model.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index/index.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/index.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
