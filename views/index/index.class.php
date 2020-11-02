@@ -21,7 +21,7 @@ class Index extends View
         </div>
         <!-- middle row -->
         <div class="middle-row">
-        <form method="POST" action="register">
+        <form method="POST" action="index.php?action=register">
             <p>
                 <input id="username" value="" name="username" type="text" required="required" placeholder="Username"/>
                 <br>

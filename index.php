@@ -8,7 +8,7 @@
  */
 
 //include code in vendor/autoload.php file
-require_once ("vendor/autoload.php");
+require ("vendor/autoload.php");
 
 //create an object of UserController
 $user_controller = new UserController();
