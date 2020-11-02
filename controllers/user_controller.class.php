@@ -37,13 +37,13 @@ class UserController {
         }
 
 
-        $view = new UserRegister();
+        $view = new Register();
         $view->display();
     }
 
     //Login - display login form.
     public function login() {
-        $view = new UserLogin();
+        $view = new Login();
         $view->display();
     }
 
@@ -74,12 +74,12 @@ class UserController {
             return;
         }
 
-        $view = new UserLogout();
+        $view = new Logout();
         $view->display();
     }
     //Reset - display password reset form.
     public function reset() {
-        $view = new UserReset();
+        $view = new Reset();
         $view->display();
     }
 
@@ -94,7 +94,7 @@ class UserController {
             return;
         }
 
-        $view = new UserVerify();
+        $view = new Verify();
         $view->display($reset); //If this is true, show the confirmation message on page.
     }
 
