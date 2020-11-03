@@ -19,7 +19,7 @@ class Login extends View {
         <!-- middle row -->
         <div class="middle-row">
             <h3>Please enter your username and password.</h3>
-        <form method="POST" action="index.php">
+        <form method="POST" action="index.php?action=verify">
             <p>
                 <input id="username" value="" name="username" type="text" required="required" placeholder="username"/>
                 <br>

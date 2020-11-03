@@ -35,7 +35,7 @@ if ($action == "index") {
     $user_controller->logout();
 } else if ($action == "reset") {
     $user_controller->reset();
-} else if ($action == "de_reset") {
+} else if ($action == "do_reset") {
     $user_controller->do_reset();
 } else if ($action == "error") {
     $user_controller->error();

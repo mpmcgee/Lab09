@@ -25,7 +25,7 @@ class UserModel
         // REGISTER USER
     // receive all input values from the form
     $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
-    $password_hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $password_hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
     $first_name = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
     $last_name = filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
@@ -40,7 +40,7 @@ class UserModel
 
     } else {
         //Create cookie for username.
-        setcookie("username", $username);
+        setcookie("login", $username);
         return true;
 
     }
@@ -48,56 +48,59 @@ class UserModel
     }
         public function verify_user(){
 
-
-                $username = $_POST['username'];
-                $password = $_POST['password'];
-
-                //sql select statement
-                $sql = "SELECT * FROM" . $this->db->getUserTable() . "WHERE username = '$username'";
-
-                //execute the query
-                $query = $this->dbConnection->query($sql);
-
-                if ($username && password_verify($password, $query['password'])) {
-                    //array to store credentials from db
-                    setcookie("username", $username);
-                    return true;
-
+//                $username = $_POST['username'];
+//                $password = $_POST['password'];
 //
-                } else {
-                    return false;
-
-                }
-            }
+//                //sql select statement
+//                $sql = "SELECT * FROM" . $this->db->getUserTable() . "WHERE username = '$username'";
+//
+//                //execute the query
+//                $query = $this->dbConnection->query($sql);
+//
+//                if ($query && $query->num_rows == 1)
+//
+//                    $query_row = $query->fetch_assoc();
+//
+//                    if (password_verify($password, $query_row['password'])) {
+//                        setcookie("login", $username);
+//                        return true;
+//
+//
+//                    } else {
+//                        return false;
+//                    }
+            return true;
+        }
 
         public function logout(){
                 setcookie('login', '', time()-70000000000, '/');
+                return true;
         }
 
         public function reset_password(){
-            if (isset($_COOKIE['login'])){
-                if (isset($_POST['submit'])) {
-                    $username = $_POST['username'];
-                    $password = $_POST['username'];
-                    $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
-                    //sql select statement
-                    $sql = "UPDATE" . $this->db->getUserTable() .
-                        "SET password = '$password_hash' where username = '$username'";
 
-                    if ($this->dbConnection->query($sql) === TRUE){
-                        return true;
-                    }
+        $username = $_POST['username'];
+        $password_hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
-                    else{
+        //sql select statement
+
+        $sql = "UPDATE" . $this->db->getUserTable() .
+            "SET password ='$password_hash' WHERE username ='$username'";
+
+        $query = $this->dbConnection->query($sql);
+
+            if (is_null($query)){
                         return false;
                     }
 
+            else{
+                return true;
+                    }
 
-                }
-            } else{
-                return false;
+
+
             }
-        }
+
 
 }

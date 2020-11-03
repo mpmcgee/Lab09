@@ -20,7 +20,7 @@ class Reset extends View{
         <!-- middle row -->
         <h3>Please enter a new password. Username is not changeable.</h3>
         <div class="middle-row">
-            <form method="POST" action="index.php">
+            <form method="POST" action="index.php?action=do_reset">
                 <p>
                     <input id="username" value="<? ?>" name="username" type="text" required="required" placeholder="username"/>
                     <br>
