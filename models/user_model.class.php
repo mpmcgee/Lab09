@@ -23,26 +23,25 @@ class UserModel
     public function add_user()
     {
         // REGISTER USER
-        if (isset($_POST['submit'])) {
-            // receive all input values from the form
-            $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
-            $password_hash = password_hash(['$password'], PASSWORD_DEFAULT);
-            $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-            $first_name = filter_var(['first_name'], FILTER_SANITIZE_STRING);
-            $last_name = filter_var(['last_name'], FILTER_SANITIZE_STRING);
+    // receive all input values from the form
+    $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+    $password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
+    $password_hash = password_hash($password, PASSWORD_DEFAULT);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+    $first_name = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
+    $last_name = filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
 
-            $sql = ("INSERT INTO" . $this->db->getUserTable() . "(username, password, email, first_name, last_name) 
-            VALUES ('$username', '$password_hash', '$email', '$first_name', '$last_name'");
+    $sql = "INSERT INTO " . $this->db->getUserTable() .
+        " VALUES (NULL, '$username', '$password_hash', '$email', '$first_name', '$last_name')";
 
-
-            if ($this->dbConnection->query($sql)) {
-
-                return true;
-            } else {
-
-                return false;
-            }
-        }
+    $query = $this->dbConnection->query($sql);
+    if (!$query) {
+        return false;
+    } else {
+        //Create cookie for username.
+        setcookie("username", $username);
+        return true;
+    }
 
     }
         public function verify_user(){
