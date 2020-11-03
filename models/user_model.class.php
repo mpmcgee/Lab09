@@ -48,28 +48,30 @@ class UserModel
     }
         public function verify_user(){
 
-//                $username = $_POST['username'];
-//                $password = $_POST['password'];
-//
-//                //sql select statement
-//                $sql = "SELECT * FROM" . $this->db->getUserTable() . "WHERE username = '$username'";
-//
-//                //execute the query
-//                $query = $this->dbConnection->query($sql);
-//
-//                if ($query && $query->num_rows == 1)
-//
-//                    $query_row = $query->fetch_assoc();
-//
-//                    if (password_verify($password, $query_row['password'])) {
-//                        setcookie("login", $username);
-//                        return true;
-//
-//
-//                    } else {
-//                        return false;
-//                    }
-            return true;
+                $username = $_POST['username'];
+                $password = $_POST['password'];
+
+                //sql select statement
+                $sql = "SELECT * FROM" . $this->db->getUserTable() . "WHERE username='$username'";
+
+                //execute the query
+                $query = $this->dbConnection->query($sql);
+
+                if ($query && $query->num_rows > 0){
+
+                    while($query_row = $query->fetch_assoc()) {
+                        $hash = $query_row["password"];
+
+                        if (password_verify($password, $hash)) {
+                            setcookie("login", $username);
+                            return true;
+                        }
+                    }
+
+
+                            return false;
+                        }
+
         }
 
         public function logout(){
@@ -86,7 +88,7 @@ class UserModel
         //sql select statement
 
         $sql = "UPDATE" . $this->db->getUserTable() .
-            "SET password ='$password_hash' WHERE username ='$username'";
+            "SET password='$password_hash' WHERE username ='$username'";
 
         $query = $this->dbConnection->query($sql);
 
