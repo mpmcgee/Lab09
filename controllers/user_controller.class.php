@@ -58,7 +58,7 @@ class UserController {
             return;
         }
 
-        $view = new UserVerify();
+        $view = new Verify();
         $view->display($verify); //If this is true, show the confirmation message on page.
     }
 
