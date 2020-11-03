@@ -58,8 +58,9 @@ class UserController {
             return;
         }
 
+        $message = "You have successfully logged in.";
         $view = new Verify();
-        $view->display($verify); //If this is true, show the confirmation message on page.
+        $view->display($message); //If this is true, show the confirmation message on page.
     }
 
     //Logout - log user out of system.
@@ -74,8 +75,9 @@ class UserController {
             return;
         }
 
+        $message = "You have been successfully logged out.";
         $view = new Logout();
-        $view->display();
+        $view->display($message);
     }
     //Reset - display password reset form.
     public function reset() {
@@ -89,13 +91,14 @@ class UserController {
 
         //If return value is false, return an error.
         if ($reset == False) {
-            $message = "The username or password does not exist.";
+            $message = "The password could not be reset.";
             $this->error($message);
             return;
         }
 
+        $message = "Your password has been reset.";
         $view = new Verify();
-        $view->display($reset); //If this is true, show the confirmation message on page.
+        $view->display($message); //If this is true, show the confirmation message on page.
     }
 
     //Error - display error page.

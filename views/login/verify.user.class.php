@@ -19,7 +19,7 @@ class Verify extends View{
 
         <!-- middle row -->
         <div class="middle-row">
-            <p><? $message ?></p>
+            <p><?= $message ?></p>
         </div>
 
         <!-- bottom row for links  -->
