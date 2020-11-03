@@ -36,9 +36,9 @@ class UserController {
             return;
         }
 
-
+        $message = "successfully created account";
         $view = new Register();
-        $view->display();
+        $view->display($message);
     }
 
     //Login - display login form.
