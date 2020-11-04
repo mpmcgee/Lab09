@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Matthew McGee
+ * Author: Matthew McGee, Danny Harris
  * Date: 10/30/2020
  * File: logout.class.php
  *Description:
@@ -18,7 +18,7 @@ class Logout extends View{
 
         <!-- middle row -->
         <div class="middle-row">
-            <p><? $message ?></p>
+            <p><?= $message ?></p>
         </div>
 
         <!-- bottom row for links  -->

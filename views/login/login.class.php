@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Matthew McGee
+ * Author: Matthew McGee, Danny Harris
  * Date: 10/30/2020
  * File: login.class.php
  *Description:
@@ -19,18 +19,19 @@ class Login extends View {
         <!-- middle row -->
         <div class="middle-row">
             <h3>Please enter your username and password.</h3>
-        <form method="POST" action="index.php">
+        <form method="POST" action="index.php?action=verify">
             <p>
-                <input id="username" value="" name="username" type="text" required="required" placeholder="username"/>
+                <input id="username" value="" name="username" type="text" required="required" placeholder="Username"/>
                 <br>
             </p>
             <p>
                 <input id="password" value="" name="password" type="text" required="required" placeholder="Password"/>
                 <br>
             </p>
-            <button type="submit"><span>Login</span></button>
+            <button type="submit" style="width: 560px; background-color: #333333; height: 50px; color: white"><span>Login</span></button>
         </form>
         </div>
+
         <!-- bottom row for links  -->
         <div class="bottom-row">
             <span style="float: left">Don't have an account? <a href="index.php">Register</a></span>
