@@ -25,7 +25,7 @@ class Reset extends View{
                     <br>
                 </p>
                 <p>
-                    <input id="password" value="" name="password" type="text" required="required" placeholder="Password, 5 characters minimum"/>
+                    <input id="password" value="" name="password" type="password" required="required" placeholder="Password, 5 characters minimum"/>
                     <br>
                 </p>
                 <button type="submit" style="width: 560px; background-color: #333333; height: 50px; color: white"><span>RESET PASSWORD</span></button>

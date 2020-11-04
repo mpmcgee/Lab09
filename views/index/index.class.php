@@ -27,7 +27,7 @@ class Index extends View
                 <br>
             </p>
             <p>
-                <input id="password" value="" name="password" type="text" required="required" placeholder="Password, 5 characters minimum"/>
+                <input id="password" value="" name="password" type="password" required="required" placeholder="Password, 5 characters minimum"/>
                 <br>
             </p>
             <p>
