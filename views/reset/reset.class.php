@@ -14,7 +14,6 @@ class Reset extends View{
         ?>
         <!-- page specific content starts -->
         <!-- top row for the page header  -->
-        <div class="top-row"></div>
         <div class="top-row">RESET PASSWORD</div>
 
         <!-- middle row -->
@@ -22,7 +21,7 @@ class Reset extends View{
         <div class="middle-row">
             <form method="POST" action="index.php?action=do_reset">
                 <p>
-                    <input id="username" value="<? ?>" name="username" type="text" required="required" placeholder="username"/>
+                    <input id="username" value=" <?php ?> " name="username" type="text" required="required" placeholder="username"/>
                     <br>
                 </p>
                 <p>

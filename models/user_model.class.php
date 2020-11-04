@@ -46,37 +46,46 @@ class UserModel
     }
 
     }
-        public function verify_user(){
+        public function verify_user()
+        {
 
-                $username = $_POST['username'];
-                $password = $_POST['password'];
+            $username = ($_POST['username']);
+            $password = ($_POST['password']);
 
-                //sql select statement
-                $sql = "SELECT * FROM" . $this->db->getUserTable() . "WHERE username='$username'";
+            //sql select statement
+            $sql = "Select * From " . $this->db->getUserTable() . " WHERE username = '$username'";
 
-                //execute the query
-                $query = $this->dbConnection->query($sql);
+            //execute the query
+            $query = $this->dbConnection->query($sql);
 
-                if ($query && $query->num_rows > 0){
+            if($query->num_rows > 0){
 
-                    while($query_row = $query->fetch_assoc()) {
-                        $hash = $query_row["password"];
+                while ($query_row = $query->fetch_assoc()){
 
-                        if (password_verify($password, $hash)) {
+                        if (password_verify($password, $query_row['password'])) {
                             setcookie("login", $username);
                             return true;
                         }
-                    }
-
-
-                            return false;
-                        }
-
+                }
+            }
         }
 
+
+
+
+
+
         public function logout(){
-                setcookie('login', '', time()-70000000000, '/');
-                return true;
+            if (isset($_COOKIE['login'])) {
+                unset($_COOKIE['login']);
+                setcookie('login', null, -1, '/');
+            }
+
+                if (isset($_COOKIE['login'])){
+                    return false;
+                } else {
+                    return true;
+                }
         }
 
         public function reset_password(){
@@ -84,15 +93,18 @@ class UserModel
 
         $username = $_POST['username'];
         $password_hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
+        $tbl = $this->db->getUserTable();
+
 
         //sql select statement
 
-        $sql = "UPDATE" . $this->db->getUserTable() .
-            "SET password='$password_hash' WHERE username ='$username'";
+        $sql = "UPDATE $tbl SET password='$password_hash' WHERE username='$username'";
+
+
 
         $query = $this->dbConnection->query($sql);
 
-            if (is_null($query)){
+            if (!$query){
                         return false;
                     }
 

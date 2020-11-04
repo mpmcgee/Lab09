@@ -28,6 +28,8 @@
     <list default="true" id="5ca7eba8-b211-4e08-8452-00250c16be11" name="Default Changelist" comment="login and reset password not working yet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user_model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_model.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/logout/logout.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/logout/logout.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reset/reset.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/reset/reset.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../I211/Unit04/Practice2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -88,7 +90,8 @@
       <workItem from="1604171922412" duration="209000" />
       <workItem from="1604239545175" duration="1428000" />
       <workItem from="1604280245487" duration="1369000" />
-      <workItem from="1604405045328" duration="16361000" />
+      <workItem from="1604405045328" duration="16467000" />
+      <workItem from="1604441878987" duration="6611000" />
     </task>
     <task id="LOCAL-00003" summary="Ready for testing.">
       <created>1604239879016</created>
@@ -160,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604434337575</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="login and reset password not working yet">
+      <created>1604436335166</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604436335166</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,10 +220,10 @@
     </state>
     <state x="-1180" y="-25" key="FileChooserDialogImpl/0.0.1366.728/-1920.-300.1920.1040@-1920.-300.1920.1040" timestamp="1604430780096" />
     <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604281094308" />
-    <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2" timestamp="1604434342492">
+    <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2" timestamp="1604436337872">
       <screen x="-1920" y="-300" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-300.1920.1040@-1920.-300.1920.1040" timestamp="1604434342492" />
+    <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-300.1920.1040@-1920.-300.1920.1040" timestamp="1604436337872" />
     <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604281559943" />
     <state x="-1304" y="90" width="672" height="677" key="run.anything.popup" timestamp="1604427797287">
       <screen x="-1920" y="-300" width="1920" height="1040" />
