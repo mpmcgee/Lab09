@@ -35,6 +35,7 @@ div.top-row {
 div.middle-row {
     min-height: 200px;
     padding: 0px 20px;
+    width: 100%;
 }
 
 div.bottom-row {
@@ -55,9 +56,18 @@ input.button {
     text-transform: uppercase;
 }
 
+input[type=text] {
+    width: 550px;
+}
+
+input[type=submit] {
+    width: 550px;
+}
+
 input[type='text'], input[type='password'], input[type='email'] {
     height: 30px;
     font-size: 10pt;
+    width: 550px;
 }
 
 form div {
