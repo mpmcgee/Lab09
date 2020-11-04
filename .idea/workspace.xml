@@ -27,9 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ca7eba8-b211-4e08-8452-00250c16be11" name="Default Changelist" comment="Everything works except reset pwd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user_model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_model.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/reset/reset.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/reset/reset.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/reset/reset_confirm.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1604280245487" duration="1369000" />
       <workItem from="1604405045328" duration="16467000" />
       <workItem from="1604441878987" duration="8107000" />
-      <workItem from="1604450166977" duration="212000" />
+      <workItem from="1604450166977" duration="713000" />
     </task>
     <task id="LOCAL-00003" summary="Ready for testing.">
       <created>1604239879016</created>
@@ -178,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604448546748</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Everything works except reset pwd">
+      <created>1604450395389</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604450395389</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,10 +234,10 @@
     </state>
     <state x="-1180" y="-25" key="FileChooserDialogImpl/0.0.1366.728/-1920.-300.1920.1040@-1920.-300.1920.1040" timestamp="1604430780096" />
     <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604281094308" />
-    <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2" timestamp="1604450308055">
+    <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2" timestamp="1604450397051">
       <screen x="-1920" y="-300" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-300.1920.1040@-1920.-300.1920.1040" timestamp="1604450308055" />
+    <state x="-1368" y="-47" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-300.1920.1040@-1920.-300.1920.1040" timestamp="1604450397051" />
     <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604281559943" />
     <state x="-1304" y="90" width="672" height="677" key="run.anything.popup" timestamp="1604427797287">
       <screen x="-1920" y="-300" width="1920" height="1040" />

@@ -21,7 +21,7 @@ class Reset extends View{
             <h3>Please enter a new password. Username is not changeable.</h3>
             <form method="POST" action="index.php?action=do_reset">
                 <p>
-                    <input id="username" value="username" name="username" type="text" required="required" placeholder="username"/>
+                    <input id="username" value="<?= $_COOKIE['login']?>" name="username" type="text" required="required" placeholder="username" readonly/>
                     <br>
                 </p>
                 <p>
