@@ -1,7 +1,6 @@
 <?php
-
 /*
- * Author: Coltin Espich
+ * Author: Coltin Espich, Danny Harris, Matthew McGee
  * Date: 11/01/2020
  * Name: index.php
  * Description: short description about this file

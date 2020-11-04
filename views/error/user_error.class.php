@@ -1,6 +1,6 @@
 <?php
 /*
- * Author: Louie Zhu
+ * Author: Danny Harris, Coltin Espich, Matthew McGee
  * Date: 9/25/2018
  * Name: user_error.class.php
  * Description: This class extends the View class. The "display" method displays an error message. 

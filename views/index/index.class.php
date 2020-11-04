@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Author: Matthew McGee, Danny Harris, Coltin Espich
  * Date: 10/30/2020
  * File: index.class.php

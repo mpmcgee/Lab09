@@ -1,6 +1,6 @@
 <?php
-/**
- * Author: Matthew McGee
+/*
+ * Author: Matthew McGee, Danny Harris, Coltin Espich
  * Date: 10/30/2020
  * File: user_model.class.php
  *Description:
@@ -36,7 +36,6 @@ class UserModel
         //execute the query
         $query = $this->dbConnection->query($sql);
 
-
         if (is_null($query)) {
             return false;
 
@@ -45,10 +44,11 @@ class UserModel
             //Create cookie for username.
             setcookie("login", $username);
             return true;
-
         }
 
         }
+
+
         public function verify_user()
         {
             //get credentials
@@ -76,16 +76,14 @@ class UserModel
         }
 
 
-
-
-
-
         public function logout(){
+
+            //if 'login' cookie is set, destroy it
             if (isset($_COOKIE['login'])) {
                 unset($_COOKIE['login']);
                 setcookie('login', null, -1, '/');
             }
-
+                //if 'login' cookie is not set, return true
                 if (isset($_COOKIE['login'])){
                     return false;
                 } else {
@@ -93,21 +91,18 @@ class UserModel
                 }
         }
 
+
         public function reset_password(){
 
-
+        //retrieve credentials and table
         $username = $_POST['username'];
         $password_hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
         $tbl = $this->db->getUserTable();
 
-
-
-        //sql select statement
-
+        //sql update statement
         $sql = "UPDATE $tbl SET password='$password_hash' WHERE username='$username'";
 
-
-
+        //execute the query
         $query = $this->dbConnection->query($sql);
 
             if (!$query){
@@ -117,10 +112,5 @@ class UserModel
             else{
                 return true;
                     }
-
-
-
             }
-
-
 }

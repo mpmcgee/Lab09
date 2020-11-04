@@ -27,7 +27,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5ca7eba8-b211-4e08-8452-00250c16be11" name="Default Changelist" comment="Everything works except reset pwd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user_controller.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user_controller.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user_model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_model.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error/user_error.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/error/user_error.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index/index.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/index.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index/register.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/register.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login/login.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/login.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login/verify.user.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/verify.user.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/logout/logout.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/logout/logout.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reset/reset.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/reset/reset.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reset/reset_confirm.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/reset/reset_confirm.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +68,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../I211/Unit04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -92,6 +101,7 @@
       <workItem from="1604441878987" duration="8107000" />
       <workItem from="1604450166977" duration="828000" />
       <workItem from="1604490209519" duration="595000" />
+      <workItem from="1604492344706" duration="368000" />
     </task>
     <task id="LOCAL-00003" summary="Ready for testing.">
       <created>1604239879016</created>

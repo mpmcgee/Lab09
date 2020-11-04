@@ -1,6 +1,6 @@
 <?php
-/**
- * Author: Danny Harris
+/*
+ * Author: Danny Harris, Coltin Espich, Matthew McGee
  * Date: 10/31/20
  * File: reset_confirm.class.php
  * Description:
