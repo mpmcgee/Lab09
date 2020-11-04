@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Matthew McGee
+ * Author: Matthew McGee, Danny Harris, Coltin Espich
  * Date: 10/30/2020
  * File: register.class.php
  *Description:
@@ -23,6 +23,7 @@ class Register extends View
         </div>
 
         <!-- bottom row for links  -->
+
         <div class="bottom-row">
             <span style="float: left">Want to logout? <a href="index.php?action=logout">Logout</a></span>
             <span style="float: right">Reset password? <a href="index.php?action=reset">Reset</a></span>

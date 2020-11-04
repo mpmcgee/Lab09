@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Matthew McGee
+ * Author: Matthew McGee, Danny Harris, Coltin Espich
  * Date: 10/30/2020
  * File: index.class.php
  *Description:
@@ -42,9 +42,10 @@ class Index extends View
                 <input id="lastname" value="" name="lastname" type="text" required="required" placeholder="Last name"/>
                 <br>
             </p>
-            <button type="submit"><span>Register</span></button>
+            <button type="submit" style="width: 560px; background-color: #333333; height: 50px; color: white"><span>Register</span></button>
         </form>
         </div>
+        <hr>
         <!-- bottom row for links  -->
         <div class="bottom-row">
             <span style="float: left">Already have an account? <a href="index.php?action=login">Login</a></span>

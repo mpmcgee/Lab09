@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Matthew McGee
+ * Author: Matthew McGee, Danny Harris
  * Date: 10/30/2020
  * File: verify.user.class.php
  *Description:

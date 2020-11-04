@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Matthew McGee
+ * Author: Matthew McGee, Danny Harris
  * Date: 10/30/2020
  * File: reset.class.php
  *Description:
@@ -28,7 +28,7 @@ class Reset extends View{
                     <input id="password" value="" name="password" type="text" required="required" placeholder="Password, 5 characters minimum"/>
                     <br>
                 </p>
-                <button type="submit"><span>RESET PASSWORD</span></button>
+                <button type="submit" style="width: 560px; background-color: #333333; height: 50px; color: white"><span>RESET PASSWORD</span></button>
             </form>
         </div>
         <!-- bottom row for links  -->
