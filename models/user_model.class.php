@@ -20,35 +20,38 @@ class UserModel
 
 
 
-    public function add_user()
-    {
+    public function add_user(){
         // REGISTER USER
-    // receive all input values from the form
-    $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
-    $password_hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-    $first_name = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
-    $last_name = filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
+        // receive all input values from the form
+        $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+        $password_hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+        $first_name = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
+        $last_name = filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
 
-    $sql = "INSERT INTO " . $this->db->getUserTable() .
-        " VALUES (NULL, '$username', '$password_hash', '$email', '$first_name', '$last_name')";
+        //SQL insert statement
+        $sql = "INSERT INTO " . $this->db->getUserTable() .
+            " VALUES (NULL, '$username', '$password_hash', '$email', '$first_name', '$last_name')";
 
-    $query = $this->dbConnection->query($sql);
+        //execute the query
+        $query = $this->dbConnection->query($sql);
 
-    if (is_null($query)) {
-        return false;
 
-    } else {
-        //Create cookie for username.
-        setcookie("login", $username);
-        return true;
+        if (is_null($query)) {
+            return false;
 
-    }
+        //set cookie with username and return true
+        } else {
+            //Create cookie for username.
+            setcookie("login", $username);
+            return true;
 
-    }
+        }
+
+        }
         public function verify_user()
         {
-
+            //get credentials
             $username = ($_POST['username']);
             $password = ($_POST['password']);
 
@@ -59,15 +62,17 @@ class UserModel
             $query = $this->dbConnection->query($sql);
 
             if($query->num_rows > 0){
-
+                //loop through all rows
                 while ($query_row = $query->fetch_assoc()){
 
+                        //verify password
                         if (password_verify($password, $query_row['password'])) {
                             setcookie("login", $username);
                             return true;
                         }
                 }
             }
+            return false;
         }
 
 
