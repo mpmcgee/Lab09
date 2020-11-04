@@ -96,6 +96,7 @@ class UserModel
         $tbl = $this->db->getUserTable();
 
 
+
         //sql select statement
 
         $sql = "UPDATE $tbl SET password='$password_hash' WHERE username='$username'";

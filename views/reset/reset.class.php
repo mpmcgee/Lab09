@@ -17,11 +17,11 @@ class Reset extends View{
         <div class="top-row">RESET PASSWORD</div>
 
         <!-- middle row -->
-        <h3>Please enter a new password. Username is not changeable.</h3>
         <div class="middle-row">
+            <h3>Please enter a new password. Username is not changeable.</h3>
             <form method="POST" action="index.php?action=do_reset">
                 <p>
-                    <input id="username" value=" <?php ?> " name="username" type="text" required="required" placeholder="username"/>
+                    <input id="username" value="username" name="username" type="text" required="required" placeholder="username"/>
                     <br>
                 </p>
                 <p>
@@ -33,7 +33,7 @@ class Reset extends View{
         </div>
         <!-- bottom row for links  -->
         <div class="bottom-row">
-            <span style="float: right">Cancel password reset?<a href="index.php">Cancel Reset</a></span>
+            <span style="float: right">Cancel password reset? <a href="index.php">Cancel Reset</a></span>
         </div>
         <!-- page specific content ends -->
 
